@@ -1,0 +1,41 @@
+{
+  "skill_name": "clear-explainer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "what does idempotent mean",
+      "expected_output": "A short direct answer (a few sentences) with one concrete example. No headings, no tutorial.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "whats the difference between a process and a thread",
+      "expected_output": "Leads with the one underlying difference (separate vs shared memory) and derives isolation, cost, communication and failure behaviour from it; says where each fits; not just a side-by-side attribute table.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Why do we only use 10% of our brains? Is there any way to train the other 90%?",
+      "expected_output": "Identifies the false premise plainly and respectfully, says why it is an understandable belief, gives what is true, then answers the underlying question about improving cognitive ability without inventing study citations or figures.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "I'm a second-year CS student. I get what a hash table is but I don't understand why lookups are O(1) when collisions exist. Can you explain?",
+      "expected_output": "Skips re-explaining hash tables, builds from hashing to load factor to expected chain length to amortised resizing, distinguishes average from worst case, uses a small concrete example.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Our finance lead keeps saying we're profitable but cash is tight. How can both be true?",
+      "expected_output": "Explains the profit vs cash timing difference in plain business terms with a small numeric example; notes it is reasoning generally without their books.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "Rename the variable `usr` to `user` across this file.",
+      "expected_output": "Should NOT trigger the skill: a task with no explanation requested. Just do it.",
+      "files": []
+    }
+  ]
+}
