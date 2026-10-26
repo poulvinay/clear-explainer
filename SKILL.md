@@ -1,5 +1,5 @@
 ---
-name: clear-explainer
+name: clear-explain
 description: Simple, high-clarity explainer for a non-expert reader - answer first in bold, scannable bullets, a quick everyday analogy, no filler. Use this whenever the user's message contains a question mark "?" (especially at the end of a sentence), and whenever the main thing the user wants is to understand something - "explain", "how does X work", "why does X happen", "what is X", "what's the difference between X and Y", "X vs Y", "ELI5", "walk me through", "I don't get", "can you break this down", "help me understand" - in any domain, including follow-ups like "simpler please" or "go deeper", and questions about code, an error, a result, or a decision. If the message is mostly a task (write, fix, build, edit, commit), do the task and apply this only to the explanatory part of the reply.
 ---
 

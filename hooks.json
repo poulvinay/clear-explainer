@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "jq -c 'if (.prompt // \"\" | contains(\"?\")) then {hookSpecificOutput:{hookEventName:\"UserPromptSubmit\",additionalContext:\"The prompt contains a question mark: apply the clear-explainer skill (load it with the Skill tool) to the explanatory part of your reply.\"}} else empty end'",
+            "command": "jq -c 'if (.prompt // \"\" | contains(\"?\")) then {hookSpecificOutput:{hookEventName:\"UserPromptSubmit\",additionalContext:\"The prompt contains a question mark: apply the clear-explain skill (load it with the Skill tool) to the explanatory part of your reply.\"}} else empty end'",
             "timeout": 5
           }
         ]

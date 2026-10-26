@@ -1,6 +1,6 @@
-# clear-explainer
+# clear-explain
 
-Make technical topics easier to understand. **clear-explainer** is an Agent Skill that gives coding agents a clear, conversational explanation style, similar to what people often appreciate in ChatGPT.
+Make technical topics easier to understand. **clear-explain** is an Agent Skill that gives coding agents a clear, conversational explanation style, similar to what people often appreciate in ChatGPT.
 
 It leads with the answer, uses plain language and short sections, adds an everyday analogy when it helps, and skips filler. It works for questions, code, errors, comparisons, and other requests where the user wants to understand something.
 
@@ -17,15 +17,15 @@ It leads with the answer, uses plain language and short sections, adds an everyd
 Install from the skills directory:
 
 ```bash
-npx skills add poulvinay/clear-explainer
+npx skills add poulvinay/clear-explain
 ```
 
 Or install manually for Claude Code:
 
 ```bash
-mkdir -p ~/.claude/skills/clear-explainer
-curl -o ~/.claude/skills/clear-explainer/SKILL.md \
-  https://raw.githubusercontent.com/poulvinay/clear-explainer/main/SKILL.md
+mkdir -p ~/.claude/skills/clear-explain
+curl -o ~/.claude/skills/clear-explain/SKILL.md \
+  https://raw.githubusercontent.com/poulvinay/clear-explain/main/SKILL.md
 ```
 
 Skills-compatible agents discover the skill from its `SKILL.md` file. Restart your agent if it does not appear right away.
