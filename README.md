@@ -8,7 +8,7 @@ It leads with the answer, uses plain language and short sections, adds an everyd
 
 - Answers the question directly before adding detail.
 - Explains unfamiliar ideas in plain language, at the reader's level.
-- Uses examples and everyday analogies where they make an idea easier to picture.
+- Uses concrete examples and everyday analogies where they make an idea easier to picture.
 - Adapts to follow-ups such as “make it simpler” or “go deeper.”
 - Keeps task requests focused on the task and applies the style to the explanation.
 
@@ -23,9 +23,11 @@ npx skills add poulvinay/clear-explain
 Or install manually for Claude Code:
 
 ```bash
-mkdir -p ~/.claude/skills/clear-explain
+mkdir -p ~/.claude/skills/clear-explain/references
 curl -o ~/.claude/skills/clear-explain/SKILL.md \
   https://raw.githubusercontent.com/poulvinay/clear-explain/main/SKILL.md
+curl -o ~/.claude/skills/clear-explain/references/worked-examples.md \
+  https://raw.githubusercontent.com/poulvinay/clear-explain/main/references/worked-examples.md
 ```
 
 Skills-compatible agents discover the skill from its `SKILL.md` file. Restart your agent if it does not appear right away.
@@ -45,13 +47,13 @@ The skill also applies to the explanatory part of a task, such as fixing a bug o
 
 **Question:** “What does a 404 mean?”
 
-**Answer:** A 404 means the server is working, but the page could not be found at that address. The page may have moved, been deleted, or the URL may be mistyped.
+**Answer:** **A 404 means the server is working, but the page could not be found at that address.** The page may have moved, been deleted, or the URL may be mistyped.
 
-More examples are in [`examples/worked-examples.md`](examples/worked-examples.md).
+More examples are in [`references/worked-examples.md`](references/worked-examples.md).
 
 ## How it works
 
-The skill's instructions live in [`SKILL.md`](SKILL.md). It defines when to use the explanation style and how to keep answers direct, readable, and accurate. The prompt examples used to evaluate the skill are in [`evals/evals.json`](evals/evals.json).
+The skill's instructions live in [`SKILL.md`](SKILL.md). It defines when to use the explanation style and how to keep answers direct, readable, and accurate. When the agent needs calibration, SKILL.md points it to [`references/worked-examples.md`](references/worked-examples.md). Test prompts live in [`evals/`](evals/): the original set in `evals.json`, newer cases as one folder each (the layout `claude plugin eval` reads).
 
 For Claude Code users, [`hooks.json`](hooks.json) includes an optional `UserPromptSubmit` hook that reminds Claude to use the skill when a prompt contains a question mark. The hook requires `jq` and must be added to `~/.claude/settings.json`; it is not needed for other agents.
 

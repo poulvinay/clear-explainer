@@ -21,7 +21,7 @@ history of 404, and a bulleted list of common causes.
 
 **Stronger:**
 
-> It means the server was reached but has nothing at that address - the page was
+> **It means the server was reached but has nothing at that address** - the page was
 > moved, deleted, or the URL is mistyped. The site itself is working; that
 > particular link is not.
 
@@ -44,8 +44,8 @@ This restates the question. "Less dense" is the thing that needed explaining.
 
 **Stronger:**
 
-> Ice floats because water takes up more room when it freezes, so a piece of ice
-> is lighter than the same volume of liquid water - about 9% lighter.
+> **Ice floats because water takes up more room when it freezes, so a piece of ice
+> is lighter than the same volume of liquid water** - about 9% lighter.
 >
 > That is unusual; most substances shrink when they freeze. Water is different
 > because of the shape of its molecules. Each one is slightly bent and attracts
@@ -78,8 +78,8 @@ suggests "making sure the index exists".
 
 **Stronger:**
 
-> The planner picks a seq scan when it estimates that is cheaper, so the question
-> is which estimate is leading it there. The usual causes, roughly in order of
+> **The planner picks a seq scan when it estimates that is cheaper, so the question
+> is which estimate is leading it there.** The usual causes, roughly in order of
 > likelihood:
 >
 > 1. **The filter is not selective.** If the range matches a large share of the
@@ -121,7 +121,7 @@ Accurate, but the rows look unrelated and the reader still cannot choose.
 
 **Stronger:**
 
-> The difference is whose money is being spent at the moment you pay. A debit
+> **The difference is whose money is being spent at the moment you pay.** A debit
 > card takes your own money straight out of your bank account. A credit card
 > spends the card issuer's money, and you pay them back later.
 >
@@ -161,7 +161,7 @@ Seasons are caused by axial tilt."
 
 **Stronger:**
 
-> Distance is not what causes the seasons, though it is a natural guess - getting
+> **Distance is not what causes the seasons**, though it is a natural guess - getting
 > closer to a heat source is how warmth works in everyday life. Two things show
 > it cannot be the cause: the Earth is closest to the sun in early January, the
 > middle of northern winter; and the two hemispheres have opposite seasons at the
@@ -195,7 +195,7 @@ code and more comments.
 
 **Stronger:**
 
-> Let's leave the code for a moment. You are in a queue and want to know your
+> **Think of a queue where each person only asks the one ahead.** You are in a queue and want to know your
 > position, but you can only see the person ahead of you.
 >
 > You ask them, "what's your position?" They do not know either, so they ask the

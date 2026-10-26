@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: eli5-what-is-dns
+expected_outcome: |
+  Bold one-sentence answer, then a short explanation built on one everyday analogy (such as a phone contacts list) mapped back to domain names and IP addresses. No jargon beyond what is defined, no history, no filler.
